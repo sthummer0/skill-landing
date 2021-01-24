@@ -7,9 +7,15 @@ body * {
     box-sizing: border-box;
 }
 
-.header-content {
+.header__content {
     max-width: 1300px;
     margin: auto;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
 }
 
 .button {
@@ -24,7 +30,7 @@ body * {
     font-style: italic;
 } 
 
-.logo {
+.header__content-logo {
     color: #E3B873;
 }
 
@@ -32,23 +38,23 @@ body * {
     background-color: black;
 }
 
-.header-content {
+.header__content {
     display: flex;
     justify-content: space-between;
     height: 83px;
     align-items: center;
 }
 
-.header-nav {
+.header__content-nav {
     list-style: none;
     display: flex;
 }
 
-.header-nav-item {
+.header__content-nav-item {
     margin-right: 47px;
 }
 
-.header-nav-item a {
+.header__content-nav-item a {
     text-decoration: none;
     color: white;
 }
@@ -84,10 +90,33 @@ body * {
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #fff;
     z-index: 1;
+}
+
+.subtitle {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
 }
 
 .rostov {
     color: #E3B873;
 }
+
+/* What is your name: */
+
+.input {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
