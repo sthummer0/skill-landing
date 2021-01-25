@@ -1,22 +1,12 @@
 {
   "name": "skill-landing",
   "version": "1.0.0",
-  "description": "landing",
-  "main": "index.js",
-  "scripts": {
-    "test": "111"
-  },
-  "repository": {"type": "git",
-    "url": "git+https://github.com/sthummer0/skill-landing.git"
-  },
-  "keywords": ["landing"],
+  "description": "skill-landing",
   "author": "Sabit Turkeyev",
   "license": "ISC",
-  "bugs": {"url": "https://github.com/sthummer0/skill-landing/issues"},
-  "homepage": "https://github.com/sthummer0/skill-landing#readme"
-}
-
-"scripts":{
-  "compile-sass": "sass ./scss/style.scss ./css/styles.css",
-  "watch-sass": "sass watch ./scss/style.scss:./css/styles.css"
+  "scripts": {
+    "compile-sass": "srcsass./scss/style.scss ./css/styles.css",
+    "watch-sass": "sass --watch ./scss/style.scss:./css/styles.css",
+    "build": "webpack"
+  }
 }
