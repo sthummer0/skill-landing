@@ -5,7 +5,7 @@
   "author": "Sabit Turkeyev",
   "license": "ISC",
   "scripts": {
-    "compile-sass": "srcsass./scss/style.scss ./css/styles.css",
+    "compile-sass": "src sass./scss/style.scss ./css/styles.css",
     "watch-sass": "sass --watch ./scss/style.scss:./css/styles.css",
     "build": "webpack"
   }
