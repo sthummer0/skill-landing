@@ -33,7 +33,7 @@ main {
 .header__inner {
     padding: 22px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -126,7 +126,15 @@ main {
     text-transform: uppercase;
     font-style: italic;
     cursor: pointer;
+    transition: background .1s linear, color .1s linear;
 } 
+
+.btn.header__btn:hover {
+    background: #fff;
+    color: #E3B873;
+}
+
+
 /* Intro */
 
 .intro {
@@ -161,7 +169,6 @@ main {
     align-content: center;
     justify-content: center;
 }
-
 
 .intro__title {
     font-family: Yeseva One, 'Times New Roman', Times, serif;
@@ -202,6 +209,8 @@ main {
     color: white;
     text-transform: uppercase;
     z-index: 10;
+    cursor: pointer;
+    transition: background .1s linear, color .1s linear;
 }
 
 .intro__btn-submit {
@@ -216,6 +225,17 @@ main {
     color: white;
     text-transform: uppercase;
     z-index: 10;
+    cursor: pointer;
+    transition: background .1s linear, color .1s linear;
+}
+
+.intro__btn-cost:hover {
+    background: #fff;
+    color: #E3B873;
+}
+
+.intro__btn-submit:hover {
+    background: #E3B873;
 }
 
 .subtitle {
