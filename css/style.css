@@ -21,7 +21,7 @@ main {
 
 .header {
     width: 100%;
-    height: 85px;
+    height: 90px;
     position: absolute;
     top: 0;
     left: 0;
@@ -44,7 +44,6 @@ main {
     text-transform: uppercase;
     line-height: 15px;
     color: #E3B873;
-
 }
 /*.container {
     max-width: 1300px;
@@ -65,9 +64,6 @@ main {
 .nav {
     font-size: 11px;
     text-transform: uppercase;
-    /*list-style: none;*/
-    /*display: flex;*/
-    /*margin-right: 47px;*/
 }
 
 .nav__link {
@@ -103,20 +99,22 @@ main {
     color: #E3B873
 }
 
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link.active:after {
     opacity: 1;
+}
+
+.nav__link.active {
+    color: #E3B873;
 }
 
 .header__phone {
     color: #E3B873;
     font-size: 11px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    line-height: 15px;
 }
 
-.button.header__button {
+.btn.header__btn {
+    display: inline-block;
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
@@ -127,6 +125,7 @@ main {
     color: white;
     text-transform: uppercase;
     font-style: italic;
+    cursor: pointer;
 } 
 /* Intro */
 
@@ -137,8 +136,7 @@ main {
     background: url('../images/hero.jpg') center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    /* height: 707px;*/
-    padding-top: 194px;
+    padding-top: 90px;
     position: relative;
 }
 
@@ -154,19 +152,14 @@ main {
 }
 
 .intro__inner {
-    
-    width: 100%;
-    max-width: 520px;
-    margin: 5% auto 30% 10%;
+    max-width: 600px;
     position: relative;
-    z-index: 10;
-    justify-self: stretch;
-    /*padding-top: 500;
-    padding-bottom: 0;
-    padding-left: 10%;
-    z-index: 100;
-
-    display:list-item;*/
+    z-index: 2;
+    top: 30%;
+    left: 10%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -194,28 +187,32 @@ main {
     z-index: 10;
 }
 
-.intro__button-cost {
-    margin: auto;
+.intro__btn-cost {
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 207px;
+    height: 51px;
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
-    outline: 0;
     border: 0;
     padding: 13px 23px;
     font-size: 11px;
+    font-style: italic;
     color: white;
     text-transform: uppercase;
     z-index: 10;
 }
 
-.intro__button-submit {
+.intro__btn-submit {
+    width: 207px;
+    height: 51px;
     background: none;
     border-radius: 2px;
-    outline: 0;
-    border-width: 2px;
-    border-color: #fff;
+    border: 1px solid #fff;
     padding: 13px 23px;
     font-size: 11px;
+    font-style: italic;
     color: white;
     text-transform: uppercase;
     z-index: 10;
