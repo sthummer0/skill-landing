@@ -1,6 +1,35 @@
+@font-face {
+    src: url('../fonts/YesevaOne-Regular.ttf');
+    font-family: 'Yeseva One';
+}
+
+@font-face {
+    src: url('../fonts/NunitoSans-Regular.ttf');
+    font-family:  'Nunito Sans';
+}
+
+@font-face {
+    src: url('../fonts/NunitoSans-Bold.ttf');
+    font-family:  'Nunito Sans';
+    font-weight: bold;
+}
+
+@font-face {
+    src: url('../fonts/NunitoSans-Italic.ttf');
+    font-family:  'Nunito Sans';
+    font-style: italic;
+}
+
 body {
     margin: 0;
-    font-family: Nunito Sans, Arial, sans-serif;
+    padding: 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.section  {
+    width: 100%;
 }
 
 *,
@@ -9,55 +38,94 @@ body {
     box-sizing: border-box;
 }
 
+img  {
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 53px;
+}
+
+h2 {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.h4 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+p {
+    font-family:'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #363636;
 }
 
 main {
     display: block;
 }
 
-/* Header */
-
-.header {
-    width: 100%;
-    height: 90px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: black;
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
+header, footer {
+    background-color: #131313;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0; 
+    border: 0;
+    text-transform: uppercase;
+    padding: 13px 23px;
+    font-style: italic;
+    color: #fff;
+    cursor: pointer;
+    transition: background .1s linear, color .1s linear;
+}
+
+.text-gold {
+    color:#E3B873
+}
+
+/* Header */
+
 .header__inner {
-    padding: 22px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 22px 0;
 }
 
 .header__logo {
-    font-size: 11px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    line-height: 15px;
     color: #E3B873;
 }
-/*.container {
-    max-width: 1300px;
-    margin: auto;
-    display: flex;
-    height: 83px;
-    align-items: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-transform: uppercase;
-    justify-items: center;
-}*/
 
 /* Nav */
 
@@ -69,7 +137,7 @@ main {
 .nav__link {
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px;
+    margin: 0 15px;
     position: relative;
 
     color: #fff;
@@ -110,53 +178,37 @@ main {
 
 .header__phone {
     color: #E3B873;
-    font-size: 11px;
+    margin-right: 10px;
 }
 
-.btn.header__btn {
+.header__btn {
     display: inline-block;
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    outline: 0;
-    border: 0;
-    padding: 13px 23px;
     font-size: 11px;
-    color: white;
-    text-transform: uppercase;
-    font-style: italic;
-    cursor: pointer;
     transition: background .1s linear, color .1s linear;
 } 
 
-.btn.header__btn:hover {
+.button .header__btn:hover {
     background: #fff;
     color: #E3B873;
 }
 
-
 /* Intro */
 
 .intro {
-    width: 100%;
-    height: 100vh;
-
+    height: 707px;
     background: url('../images/hero.jpg') center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
-    padding-top: 90px;
     position: relative;
 }
 
-.intro__overlay {
+.intro::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .intro__inner {
@@ -171,62 +223,30 @@ main {
 }
 
 .intro__title {
-    font-family: Yeseva One, 'Times New Roman', Times, serif;
     font-size: 40px;
-    font-weight: normal;
-    text-transform: uppercase;
     color: #fff;
-    text-align: left;
-    line-height: 1.2;
-    z-index: 10;
-}
-
-.rostov {
-    color: #E3B873;
 }
 
 .intro__text {
     font-size: 22px;
     color: #fff;
     width: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    z-index: 10;
 }
 
 .intro__btn-cost {
-    margin-top: 40px;
     margin-right: 20px;
     width: 207px;
     height: 51px;
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    border: 0;
-    padding: 13px 23px;
     font-size: 11px;
-    font-style: italic;
-    color: white;
-    text-transform: uppercase;
-    z-index: 10;
-    cursor: pointer;
-    transition: background .1s linear, color .1s linear;
 }
 
 .intro__btn-submit {
     width: 207px;
     height: 51px;
     background: none;
-    border-radius: 2px;
     border: 1px solid #fff;
-    padding: 13px 23px;
     font-size: 11px;
-    font-style: italic;
     color: white;
-    text-transform: uppercase;
-    z-index: 10;
-    cursor: pointer;
-    transition: background .1s linear, color .1s linear;
 }
 
 .intro__btn-cost:hover {
@@ -238,27 +258,271 @@ main {
     background: #E3B873;
 }
 
-.subtitle {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
+/* Projects */
+
+.projects {
+    background: #131313;
+    height: 1074px;
+    padding-bottom: 400px
+}
+
+.projects__inner {
+    display: flex;
+    flex-direction: row;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 552px;
+}
+
+.projects__inner-list {
+    flex: 1;
+    padding-left: 42px;
+    margin-top: 176px;
+    width: 40%;
+}
+
+.projects__inner-list-text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 32px;
+    margin-top: 34px;
+    margin-right: 35px;
+}
+
+.projects__inner-list-items {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project__item {
+    width: 50%;
+    height: 106px;
+}
+
+.project__item h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.project__item-text {
+    color:#fff;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.projects__inner-list-arrows {
+    display: flex;
+    flex-direction: row;
+}
+.projects__inner-list-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.projects__inner-list-arrow:focus {
+    outline: none;
+}
+
+.projects__inner-list-arrows ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.projects__inner-list-arrows li {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 12px;
+    opacity: 0.5;
+}
+
+.projects__inner-list-arrows .active {
+    opacity: 1;
+}
+
+/* Slider */
+.projects__inner-slider {
+    flex: 1.55;
+    width: 80em;
+}
+
+.projects__inner-slider-nav {
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__inner-slider-link {
+    display: inline-block;
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    margin-right: 15px;
+    position: relative;
+    transition: color .1s linear;
+}
+
+.projects__inner-slider-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E3B873;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: opacity .1s linear;
+}
+
+.projects__inner-slider-link:hover {
+    color: #E3B873;
+}
+
+.projects__inner-slider-link.active:after {
+    opacity: 1;
+}
+
+.projects__inner-slider-link.active {
+    color: #E3B873;
+}
+
+.projects__inner-slider img {
+    margin-top: 53px;
+    width: 100%;
+}
+
+/* Control */
+
+.control {
+    background: none;
+}
+
+.control__inner {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -345px;
+}
+
+.control__inner-title {
+    color: #fff;
     font-size: 20px;
     line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #181818;
+    margin-bottom: 28px;
+}
+
+.camera {
+    margin: 0 auto;
+    width: 40px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.camera:before,
+.camera:after {
+    content: ' ';
+    width: 32px;
+    border-bottom: 2px solid #E3B873;
+    position: absolute;
+    top: 14px;
+}
+
+.camera:before {
+    left: -37px;
+}
+
+.camera:after {
+    left: 45px;
+}
+
+.videoplay {
+    max-width: 817px;
+    height: 435px;
+    margin: 0 auto;
+    margin-top: 45px;
+    height: 435px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
+.videoplay img:first-child {
+    filter: brightness(.3);
+}
 
-/* What is your name: */
+.play-btn {
+    position: absolute;
+    left: calc(50% - 75px);
+}
 
-.input {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
+.control__text {
+    font-size: 18px;
+    line-height: 37px;
+    color: #363636;
+    margin-top: 93px;
+    position: relative;
+}
+
+.control__text:before {
+    content: ' ';
+    width: 55px;
+    border-bottom: 2px solid #E3B873;
+    position: absolute;
+    left: calc(50% - 29px);
+    top: -31px;
+}
+
+.control__form {
+    display: flex;
+    flex-direction: row;
+    max-width: 769px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 81px;
+}
+
+.control__form-btn {
+    width: 200px;
+    height: 51px;
+
+}
+.control__form-grup {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.form_label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.form_input {
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 7px;
+    background: none;
     font-size: 14px;
     line-height: 23px;
-    color: #363636;
+    color: #131313;
 }
 
+.form_input:focus {
+    outline: none;
+}
