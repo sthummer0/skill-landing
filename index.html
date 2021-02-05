@@ -66,7 +66,7 @@
                     </div>
                     <div class="projects__inner-list-arrows">
                         <button class="projects__inner-list-arrow">
-                            <img src="images\icon\arrow-left.svg"/>
+                            <img src="images/icon/arrow-left.svg" alt="arrow-left"/>
                         </button>
                         <ul>
                             <li class="point active"></li>
@@ -74,7 +74,7 @@
                             <li class="point"></li>
                         </ul>
                         <button class="projects__inner-list-arrow">
-                            <img src="images\icon\arrow-right.svg"/>
+                            <img src="images/icon/arrow-right.svg" alt="arrow-right"/>
                         </button>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         <a class="projects__inner-slider-link" href="#">Sochi Thieves</a>
                         <a class="projects__inner-slider-link" href="#">Rostov-on-Don Patriotic</a>
                     </div>
-                    <img src="images\projects-1.jpg">
+                    <img src="images/projects-1.jpg" alt="projects-1">
                 </div>     
             </div>       
         </section>
@@ -92,48 +92,45 @@
             <div class="control__inner">
                 <h3 class="control__inner-title">online control</h3>
                 <div class="camera">
-                    <img src="images\icon\camera-icon.svg" alt="camera icon">
+                    <img src="images/icon/camera-icon.svg" alt="camera icon">
                 </div>
                 <div class="videoplay">
-                    <img src="images/control.jpg">
-                    <img class="play-btn" src="images/icon/play.svg">
+                    <img src="images/control.jpg" alt="control.jpg">
+                    <img class="play-btn" src="images/icon/play.svg" alt="play.svg">
                 </div>
                 <p class="control__text">
-                    At each facility, a camera is installed that broadcasts the progress of work on <br>the clock. At any time, you can go to our website and monitor the progress of work<br>in your apartment. You can watch the live broadcast from one of our facilities!<br>Leave a request below and you will receive a link to the broadcast.
+                        At each facility, a camera is installed that broadcasts the progress of work on 
+                    <br>the clock. At any time, you can go to our website and monitor the progress of work
+                    <br>in your apartment. You can watch the live broadcast from one of our facilities!
+                    <br>Leave a request below and you will receive a link to the broadcast.
                 </p>
                 <form class="control__form">
                     <div class="control__form-grup">
-                        <input class="form_input" placeholder="What is your name:"></input>
-                        <label class="form_label">Name</label>
+                        <label for="control__form-name">Name</label>
+                        <input placeholder="What is your name:" id="name" type="text"/>                        
                     </div>
                     <div class="control__form-grup">
-                        <input class="form_input" class="form_input" placeholder="Your phone number:"></input>
-                        <label class="form_label">Phone</label>
+                        <label for="control__form-phone">Phone</label>
+                        <input placeholder="Your phone number:" id="phone" type="phone"/>                        
                     </div>
-
-                    <button class="button control__form-btn">
-                        SUBMIT
-                    </button>
+                    <button class="button control__form-btn">SUBMIT</button>
                 </form>
-
-
-                <div class="input-checkbox hide-on-desktop">
-                    <label  class="check_box_label">
-                            <input type="checkbox" checked class="check_input">
-                            <span class="check_box"></span>
-                            I agree to the processing of personal data
+                <div class="control checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">
+                        I agree to the processing of personal data
                     </label>
                 </div>
             </div>
         </section>
         <section class="section types">
-            <div class="types">
-                <h3>TYPES OF REPAIR</h3>
-                <div>
-                    <img src="#" alt="">
+            <div class="types__inner">
+                <h3 class="types__title">Types of repair</h3>
+                <div class="types__hammer-icon">
+                    <img src="images\hammer.svg" alt="hammer icon">
                 </div>
-                <div>
-                    <div>
+                <div class="types__worktypes">
+                    <div class="types__worktypes-item redecorating">
                         <h4>Redecorating</h4>
                         <ul>
                             <li>Dismantling of old coatings</li>
@@ -146,7 +143,7 @@
                         </ul>
                         <button></button>
                     </div>
-                    <div>
+                    <div class="types__worktypes-item overhaul">
                         <h4>Overhaul</h4>
                         <ul>
                             <li>Dismantling of old coatings</li>
@@ -159,7 +156,7 @@
                         </ul>
                         <button></button>
                     </div>
-                    <div>
+                    <div class="types__worktypes-item designer-repair">
                         <h4>Designer Repair</h4>
                         <ul>
                             <li>Dismantling of old coatings</li>
@@ -173,6 +170,7 @@
                         <button></button>
                     </div>
                 </div>
+            </div>
         </section>        
         <section class="section form">
                 <div >

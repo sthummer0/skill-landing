@@ -44,7 +44,7 @@ img  {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
@@ -113,6 +113,40 @@ header, footer {
     color:#E3B873
 }
 
+.label {
+    cursor: pointer;
+}
+
+label {
+  cursor: default;
+}
+
+.checkbox label:before {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    background-color: #E3B873;
+}
+
+  
 /* Header */
 
 .header__inner {
@@ -139,10 +173,8 @@ header, footer {
     vertical-align: top;
     margin: 0 15px;
     position: relative;
-
     color: #fff;
     text-decoration: none;
-
     transition: color .1s linear;
 }
 
@@ -151,15 +183,12 @@ header, footer {
     display: block;
     width: 100%;
     height: 1px;
-    
     background-color: #E3B873;
     opacity: 0;
-
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1;
-
     transition: opacity .1s linear;
 }
 
@@ -346,7 +375,7 @@ header, footer {
     opacity: 1;
 }
 
-/* Slider */
+/* Projects Slider */
 .projects__inner-slider {
     flex: 1.55;
     width: 80em;
@@ -419,13 +448,13 @@ header, footer {
     color: #fff;
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
 }
 
 .camera {
     margin: 0 auto;
     width: 40px;
-    margin-bottom: 28px;
+    margin-bottom: 33px;
     position: relative;
 }
 
@@ -458,7 +487,6 @@ header, footer {
     align-items: center;
 }
 
-
 .videoplay img:first-child {
     filter: brightness(.3);
 }
@@ -485,44 +513,114 @@ header, footer {
     top: -31px;
 }
 
+/* control__form*/ 
+
 .control__form {
     display: flex;
     flex-direction: row;
-    max-width: 769px;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 81px;
+    max-width: 770px;
+    justify-content: space-between;
+    margin: 40px auto 40px;
 }
 
-.control__form-btn {
-    width: 200px;
-    height: 51px;
-
-}
 .control__form-grup {
     flex: 1;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
 }
 
-.form_label {
-    font-size: 13px;
-    line-height: 21px;
+.control__form-grup label {
     color: rgba(54, 54, 54, 0.5);
 }
 
-.form_input {
+.control__form-grup input {
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-bottom: 7px;
     background: none;
-    font-size: 14px;
-    line-height: 23px;
-    color: #131313;
 }
 
-.form_input:focus {
+.control__form input {
+    font-size: 14px;
+    line-height: 23px;
+    color: #141414*/
+}
+
+.control__form-grup input:focus {
     outline: none;
+}
+
+.control__form-btn {
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+}
+
+/* Types */
+
+.types {
+    background: none;
+}
+
+.types__inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.types__inner h3 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.types__hammer-icon {
+    margin: 20px auto;
+    width: 40px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.types__hammer-icon:before,
+.types__hammer-icon:after {
+    content: ' ';
+    width: 32px;
+    border-bottom: 2px solid #E3B873;
+    position: absolute;
+    top: 14px;
+}
+
+.types__hammer-icon:before {
+    left: -37px;
+}
+
+.types__hammer-icon:after {
+    left: 45px;
+}
+
+.types__worktypes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 310px;
+}
+
+.types__worktypes-item {
+    flex: 1;
+    max-width: 392px;
+    height: 421px;
+    margin-top: 33px;
+    background-position: center;
+    background-size: cover;
+}
+
+.redecorating {
+    background-image: url(images\types-1.jpg)
+}
+
+.overhaul {
+    background-image: url(images\types-2.jpg)
+}
+
+.designer-repair {
+    background-image: url(images\types-3.jpg)
 }
