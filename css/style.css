@@ -544,7 +544,7 @@ input[type=checkbox]:checked + label:before {
 .control__form input {
     font-size: 14px;
     line-height: 23px;
-    color: #141414*/
+    color: #141414;
 }
 
 .control__form-grup input:focus {
