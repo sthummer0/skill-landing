@@ -125,77 +125,105 @@
         </section>
         <section class="section types">
             <div class="types__inner">
-                <h3 class="types__title">Types of repair</h3>
+                <h3>Types of repair</h3>
                 <div class="types__hammer-icon">
-                    <img src="images\hammer.svg" alt="hammer icon">
+                    <img src="images/hammer.svg" alt="hammer icon">
                 </div>
                 <div class="types__worktypes">
-                    <div class="types__worktypes-item redecorating">
-                        <h4>Redecorating</h4>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                        <button></button>
+                    <div class="types__worktypes-item">
+                        <img src="images/types-1.jpg" alt="types-1">
+                        <div class="types_type">
+                            <h4 class="list-title">Redecorating</h4>
+                            <ul class="repair_list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <div class="button price">
+                                <h4 class="price-text">From  900 rub/m2</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="types__worktypes-item overhaul">
-                        <h4>Overhaul</h4>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                        <button></button>
+                    <div class="types__worktypes-item">
+                        <img src="images/types-2.jpg" alt="types-2">
+                        <div class="types_type">                     
+                            <h4 class="list-title">Overhaul</h4>
+                            <ul class="repair_list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <div class="button price">
+                                <h4 class="price-text">From 1800 rub/m2</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="types__worktypes-item designer-repair">
-                        <h4>Designer Repair</h4>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                        <button></button>
+                    <div class="types__worktypes-item">
+                        <img src="images/types-3.jpg" alt="types-3">
+                        <div class="types_type">
+                            <h4 class="list-title">Designer Repair</h4>
+                            <ul class="repair_list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <div class="button price">
+                                <h4 class="price-text">From 4000 rub/m2</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>        
-        <section class="section form">
-                <div >
-                    <div>
-                        Our specialist will arrive for measurements per day
-                        contact, or appoint a date convenient for you
-                    </div>
-                    <div>
-                        Free metering
-                    </div>
-                    <div>
-                        Free consultation
-                    </div>
-                    <div>
-                        Get a cost estimate and the timing of your future repairs
-                    </div>
+        <section class="section measurement">
+            <div class="measurement-inner">
+                <div class="measurement-inner__left">
+                    <div class="measurement-inner__left-item"><span class="measurement-inner__left_marker">01</span>Our specialist will arrive for measurements per day contact,<br>or appoint a date convenient for you</div>
+                    <div class="measurement-inner__left-item"><span class="measurement-inner__left_marker">02</span>Free metering</div>
+                    <div class="measurement-inner__left-item"><span class="measurement-inner__left_marker">03</span>Free consultation</div>
+                    <div class="measurement-inner__left-item"><span class="measurement-inner__left_marker">04</span>Get a cost estimate and the timing of your future repairs</div>
                 </div>
-                <form class="form_form" action=""></form>
-                <div class="form__pig">
-                    <img src="pig" alt="pig">
-                    <p>Help save 10 - 20% of the<br>cost of materials</p>
+                <div class="measurement-inner__right">
+                    <form class="measurement__form">
+                        <h5>Leave a request for free<br>departure of the measurer</h5>
+                        <div class="measurement__form-grup">
+                            <label for="measurement__form-name">Name</label>
+                            <input placeholder="What is your name:" id="name" type="text"/>                        
+                        </div>
+                        <div class="measurement__form-grup">
+                            <label for="measurement__form-phone">Phone</label>
+                            <input placeholder="Your phone number:" id="phone" type="phone"/>                        
+                        </div>
+                        <div class="measurement__form-grup">
+                            <label for="measurement__form-email">Email</label>
+                            <input placeholder="Your email:" id="email" type="email"/>                        
+                        </div>                        
+                        <div class="measure checkbox">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">I agree to the processing of personal data</label>
+                        </div>
+                        <button class="button measurement__form-btn">call the measurer</button>
+                    </form>
+                    <div class="measurement-inner__moneypig">
+                            <img src="/images/pig.png" alt="pig">
+                            <p class="moneypig">Help save 10 - 20% of the<br>cost of materials</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section portfolio">
+        <!-- <section class="section portfolio">
             <h2 class="portfolio__title">our clients</h2>
             <div class="portfolio__list">
                 <ol>
@@ -218,59 +246,136 @@
                 <img src="#" alt="">
                 <img src="#" alt="">
             </div>
-        </section>
+        </section> -->
         <section class="section clients">
-            <h3 class="clients__title">our clients</h3>
-            <p>80% of our customers recommend us to their<br/>
-                friends and family.</p>
-            <div class="clients__client1">
-                <img src="" alt="Fedosova Maria Konstantinovna">
-                <p>I want to thank the guys for their work. 
-                    We put your shower part in repair.
-                    I am very grateful that I referred to the repair as to my own. 
-                    Great thanks I express the project to Georgia for its professionalism and approach.
-                    The repair process was turned out in terms, faster than anticipated. 
-                    Team mobile and professional. 
-                    Works performed qualitatively without comments. 
-                    Quality satisfied. Prices democratic. I recommend these masters.
-                </p>
-                <div class="clients__client1-price"></div>
-            </div>
-            <div class="clients__client2">
-                <img src="" alt="Afanasyev Sergey Alexandrovich">
-                <p>I want to thank the guys for their work. 
-                    We put your shower part in repair.
-                    I am very grateful that I referred to the repair as to my own. 
-                    Great thanks I express the project to Georgia for its professionalism and approach.
-                    The repair process was turned out in terms, faster than anticipated. 
-                    Team mobile and professional. 
-                    Works performed qualitatively without comments. 
-                    Quality satisfied. Prices democratic. I recommend these masters.
-                </p>
-                <div class="clients__client2-price"></div>
-            </div>
-            <div class="clients__client3">
-                <img src="" alt="Kiriev Egor Leonidovich">
-                <p>I want to thank the guys for their work. 
-                    We put your shower part in repair.
-                    I am very grateful that I referred to the repair as to my own. 
-                    Great thanks I express the project to Georgia for its professionalism and approach.
-                    The repair process was turned out in terms, faster than anticipated. 
-                    Team mobile and professional. 
-                    Works performed qualitatively without comments. 
-                    Quality satisfied. Prices democratic. I recommend these masters.
-                </p>
-                <div class="clients__client3-price"></div>
-            </div>
-            <img src="#" alt="">
+            <div class="clients-inner">
+                <h3 class="clients__title">our clients</h3>
+                <div class="clients__icon">
+                    <img src="/images/icon/clients_icon.svg" alt="">
+                </div>
+                <p class="clients__text">80% of our customers recommend us to their<br/>friends and family.</p>
+                <div class="clients__items">
+                    <div class="clients__items-item">
+                        <div class="clients__items-item-title">
+                            <div class="client">
+                                <img class="clientphoto" src="/images/client-1.jpg" alt="Fedosova">
+                            </div>
+                            <h4>Fedosova Maria Konstantinovna</h4>                            
+                        </div>                        
+                        <p class="clients__feedback">I want to thank the guys for their work. 
+                            We put your shower part in repair.
+                            I am very grateful that I referred to the repair as to my own. 
+                            Great thanks I express the project to Georgia for its professionalism and approach.
+                            The repair process was turned out in terms, faster than anticipated. 
+                            Team mobile and professional. 
+                            Works performed qualitatively without comments. 
+                            Quality satisfied. Prices democratic. I recommend these masters.</p>
+                        <div class="clients__info">
+                            <div class="area_info">
+                                <img src="/images/icon/area_icon.svg" class="area_icon">
+                                <span>40 m2</span>
+                            </div>
+                            <div class="timing_info">
+                                <img src="./images/icon/timing_icon.svg" class="timing_icon">
+                                <span>48 DAYS</span>
+                            </div>                      
+                        </div>
+                    </div>
+                    <div class="clients__items-item">
+                        <div class="clients__items-item-title">
+                            <div class="client">
+                                <img class="clientphoto" src="/images/client-2.jpg" alt="Afanasyev Sergey Alexandrovich">
+                            </div>    
+                            <h4>Afanasyev Sergey Alexandrovich</h4>                            
+                        </div>                          
+                        <p class="clients__feedback">I want to thank the guys for their work. 
+                            We put your shower part in repair.
+                            I am very grateful that I referred to the repair as to my own. 
+                            Great thanks I express the project to Georgia for its professionalism and approach.
+                            The repair process was turned out in terms, faster than anticipated. 
+                            Team mobile and professional. 
+                            Works performed qualitatively without comments. 
+                            Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="clients__info">
+                            <div class="area_info">
+                                <img src="/images/icon/area_icon.svg" class="area_icon">
+                                <span>90 m2</span>
+                            </div>
+                            <div class="timing_info">
+                                <img src="./images/icon/timing_icon.svg" class="timing_icon">
+                                <span>128 DAYS</span>
+                            </div>                      
+                        </div>
+                    </div>
+                    <div class="clients__items-item">
+                        <div class="clients__items-item-title">
+                            <div class="client">
+                                <img class="clientphoto" src="/images/client-3.jpg" alt="Kiriev Egor Leonidovich">
+                            </div>
+                            <h4>Kiriev Egor Leonidovich</h4>                            
+                        </div>                         
+                        <p class="clients__feedback">I want to thank the guys for their work. 
+                            We put your shower part in repair.
+                            I am very grateful that I referred to the repair as to my own. 
+                            Great thanks I express the project to Georgia for its professionalism and approach.
+                            The repair process was turned out in terms, faster than anticipated. 
+                            Team mobile and professional. 
+                            Works performed qualitatively without comments. 
+                            Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="clients__info">
+                            <div class="area_info">
+                                <img src="/images/icon/area_icon.svg" class="area_icon">
+                                <span>56 m2</span>
+                            </div>
+                            <div class="timing_info">
+                                <img src="./images/icon/timing_icon.svg" class="timing_icon">
+                                <span>86 DAYS</span>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            </div>             
         </section>
-        <section class="section questionsform">
-            <h3 class="questionsform__title">have any questions?</h3>
-            <form action=""></form>
-            </section>
-        <section class="section map">
-            <h3 class="map__title">Rostov-on-Don, Nansen St., 239 Shopping Center
-                Decorum Tel +7 (928) 768 32 29</h3>
+        <section class="section questionform">
+            <div class="questionform_inner">
+                <div class="questions_form">
+                    <h5>have any questions?</h5>
+                    <div class="name_phone_input_wrapper">
+                    <div class="input-text questionform_name">
+                        <label for="screen_5_name">Name</label>
+                        <input placeholder="What is your name:" id="questionform_name" type="text">
+                    </div>
+                    <div class="input-text questionform_phone">
+                        <label for="questionform_phone">Phone</label>
+                        <input placeholder="Your phone number:" id="questionform_phone" type="text">
+                    </div>
+                    </div>  
+                    <div class="input-text questionform_question">
+                        <label for="questionform_question">Question</label>
+                        <input placeholder="I want to know:" id="questionform_question" type="text">
+                    </div>
+                    <label class="check_box_label">
+                        <input type="checkbox" checked="" class="check_input">
+                        <span class="check_box"></span>
+                        I agree to the processing of personal data
+                    </label>
+                    <button class="button questionform_button">Submit</button>
+                </div>
+                <h3>Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel +7 (928) 768 32 29</h3>
+                <div class="questionform_contacts_wrapper">
+                    <div class="questionform_contacts">
+                        <img src="./image/icon/screen_7_email.svg">
+                    </div>
+                    <div class="questionform_contacts">
+                        <img src="./image/icon/screen_7_social.svg">
+                    </div>
+                </div>
+                <div class="questionform_map">
+                    
+                </div>
+            </div>
         </section>
     </main>
     <footer>
