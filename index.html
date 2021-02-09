@@ -32,9 +32,9 @@
             <div class="intro__inner">
                 <h1 class="intro__title">Turnkey  repair in the<br>city of <span class="text-gold">Rostov-on-Don</span></h1>
                 <p class="intro__text">
-                    Get ready-made turnkey repairs on time
-                    <br>with work time saving up to 45 days and 20% from
-                    <br>cost of materials due to the organization of work</p>
+                    Get ready-made turnkey repairs on time 
+                    with work time saving up to 45 days and 20% from 
+                    cost of materials due to the organization of work</p>
                 <div class="intro__buttons">
                     <button class="button intro__btn-cost" href="#">Calculate the cost</button>
                     <button class="button intro__btn-submit" href="#">Submit your application</button>
@@ -46,6 +46,9 @@
                 <div class="projects__inner-list">
                     <h2 class="text-gold">Completed<br>projects</h2>
                     <p class="projects__inner-list-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                    <div class="for-mobile">
+                        <img src="images/projects-2.jpg" alt="projects-2">
+                    </div>
                     <div class="projects__inner-list-items">
                         <div class="project__item">
                             <h3 class="text-gold">City:</h3>
@@ -100,9 +103,9 @@
                 </div>
                 <p class="control__text">
                         At each facility, a camera is installed that broadcasts the progress of work on 
-                    <br>the clock. At any time, you can go to our website and monitor the progress of work
-                    <br>in your apartment. You can watch the live broadcast from one of our facilities!
-                    <br>Leave a request below and you will receive a link to the broadcast.
+                     the clock. At any time, you can go to our website and monitor the progress of work
+                     in your apartment. You can watch the live broadcast from one of our facilities!
+                     Leave a request below and you will receive a link to the broadcast.
                 </p>
                 <form class="control__form">
                     <div class="control__form-grup">
@@ -341,35 +344,35 @@
         <section class="section questionform">
             <div class="questionform_inner">
                 <div class="questions_form">
-                    <h5>have any questions?</h5>
-                    <div class="name_phone_input_wrapper">
-                    <div class="input-text questionform_name">
-                        <label for="screen_5_name">Name</label>
-                        <input placeholder="What is your name:" id="questionform_name" type="text">
-                    </div>
-                    <div class="input-text questionform_phone">
-                        <label for="questionform_phone">Phone</label>
-                        <input placeholder="Your phone number:" id="questionform_phone" type="text">
-                    </div>
+                    <h3>have any questions?</h3>
+                    <div class="questionform_box1">
+                        <div class="questionform_name">
+                            <label for="questionform_name">Name</label>
+                            <input placeholder="What is your name:" id="name" type="text">
+                        </div>
+                        <div class="questionform_phone">
+                            <label for="questionform_phone">Phone</label>
+                            <input placeholder="Your phone number:" id="phone" type="phone">
+                        </div>
                     </div>  
-                    <div class="input-text questionform_question">
+                    <div class="questionform_box2">
                         <label for="questionform_question">Question</label>
-                        <input placeholder="I want to know:" id="questionform_question" type="text">
+                        <input placeholder="I want to know:" id="question" type="text">
                     </div>
-                    <label class="check_box_label">
-                        <input type="checkbox" checked="" class="check_input">
-                        <span class="check_box"></span>
-                        I agree to the processing of personal data
+                    <label class="questionform checkbox">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3"></label>
+                            I agree to the processing of personal data
                     </label>
-                    <button class="button questionform_button">Submit</button>
+                    <button class="button questionform_btn">Submit</button>
                 </div>
                 <h3>Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel +7 (928) 768 32 29</h3>
                 <div class="questionform_contacts_wrapper">
                     <div class="questionform_contacts">
-                        <img src="./image/icon/screen_7_email.svg">
+                        <img src="./images/icon/screen_7_email.svg">
                     </div>
                     <div class="questionform_contacts">
-                        <img src="./image/icon/screen_7_social.svg">
+                        <img src="./images/icon/screen_7_social.svg">
                     </div>
                 </div>
                 <div class="questionform_map">
@@ -379,20 +382,22 @@
         </section>
     </main>
     <footer>
-        <div class="footer">
-            <nav>
-                <ul class="top-menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">MEASUREMENT</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#">REVIEWS</a></li>
-                    <li><a href="#">CONTACTS</a></li>
-                </ul>
+        <div class="container header__inner">
+            <div class="header__logo">
+                IC "Repair Design Project"
+            </div>
+            <nav class="nav">
+                <a class="nav__link active" href="#">HOME</a>
+                <a class="nav__link" href="#">PROJECTS</a>
+                <a class="nav__link" href="#">MEASUREMENT</a>
+                <a class="nav__link" href="#">TEAM</a>
+                <a class="nav__link" href="#">REVIEWS</a>
+                <a class="nav__link" href="#">CONTACTS</a>
             </nav>
-            <span><a href="tel. +79287683239"></a> +7 (928) 768-32-39</span>
-            <button>
-            </button>
+            <a class="header__phone" href="tel:+79287683239">
+                +7 (928) 768-32-39
+            </a>
+            <button class="button header__btn ">Request a call</button>
         </div>
     </footer>      
 </body>
