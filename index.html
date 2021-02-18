@@ -26,17 +26,19 @@
     </header>
 
     <main>
-        <section class="section intro">
-            <div class="intro__inner">
-                <h1 class="intro__title">Turnkey  repair in the city of <span class="text-gold">Rostov-on-Don</span></h1>
-                <p class="intro__text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-                <div class="intro__buttons">
-                    <button class="button intro__btn-cost" href="#">Calculate the cost</button>
-                    <button class="button intro__btn-submit" href="#">Submit your application</button>
+        <section class="intro">
+            <div class="container">
+                <div class="intro__inner">                
+                    <h1 class="intro__title">Turnkey  repair in the city of <span class="text-gold">Rostov-on-Don</span></h1>
+                    <p class="intro__text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+                    <div class="intro__buttons">
+                        <button class="button intro__btn-cost" href="#">Calculate the cost</button>
+                        <button class="button intro__btn-submit" href="#">Submit your application</button>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section projects">
+        <section class="projects">
             <div class="projects__inner">
                 <div class="projects__inner-list">
                     <h2 class="text-gold">Completed<br>projects</h2>
@@ -89,38 +91,40 @@
             </div>       
         </section>
 
-        <section class="section control">
-            <div class="control__inner">
-                <h3 class="control__inner-title">online control</h3>
-                <div class="camera"><img src="images/icon/camera-icon.svg" alt="camera icon"></div>
-                <div class="videoplay">
-                    <img src="images/control.jpg" alt="control.jpg">
-                    <img class="play-btn" src="images/icon/play.svg" alt="play.svg">
-                </div>
-                <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
-                <form class="control__form">
-                    <div class="control__form-grup">
-                        <label for="control__form-name">Name</label>
-                        <input placeholder="What is your name:" id="name" type="text"/>                        
+        <section class="control">            
+            <div class="container">
+                <div class="control__inner">                    
+                    <h3 class="control__inner-title">online control</h3>
+                    <div class="camera"><img src="images/icon/camera-icon.svg" alt="camera icon"></div>
+                    <div class="videoplay">
+                        <img src="images/control.jpg" alt="control.jpg">
+                        <img class="play-btn" src="images/icon/play.svg" alt="play.svg">
                     </div>
-                    <div class="control__form-grup">
-                        <label for="control__form-phone">Phone</label>
-                        <input placeholder="Your phone number:" id="phone" type="phone"/>                        
+                    <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
+                    <form class="control__form">
+                        <div class="control__form-grup">
+                            <label for="control__form-name">Name</label>
+                            <input placeholder="What is your name:" id="name" type="text"/>                        
+                        </div>
+                        <div class="control__form-grup">
+                            <label for="control__form-phone">Phone</label>
+                            <input placeholder="Your phone number:" id="phone" type="phone"/>                        
+                        </div>
+                        <div class="control checkbox for-mobile">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">I agree to the processing of personal data</label>
+                        </div>
+                        <button class="button control__form-btn">SUBMIT</button>
+                    </form>
+                    <div class="control checkbox for-desktop">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1">I agree to the processing of personal data</label>
                     </div>
-                    <div class="control checkbox for-mobile">
-                        <input type="checkbox" id="checkbox">
-                        <label for="checkbox">I agree to the processing of personal data</label>
-                    </div>
-                    <button class="button control__form-btn">SUBMIT</button>
-                </form>
-                <div class="control checkbox for-desktop">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">I agree to the processing of personal data</label>
                 </div>
             </div>
         </section>
 
-        <section class="section types">
+        <section class="types">
             <div class="types__inner">
                 <h3>Types of repair</h3>
                 <div class="types__hammer-icon"><img src="images/hammer.svg" alt="hammer icon"></div>
@@ -177,7 +181,7 @@
             </div>
         </section>      
 
-        <section class="section measurement">
+        <section class="measurement">
             <div class="measurement-inner">
                 <div class="measurement-inner__left">
                     <div class="measurement-inner__left-item"><span class="measurement-inner__left_marker">01</span>Our specialist will arrive for measurements per day contact,<br>or appoint a date convenient for you</div>
@@ -214,36 +218,46 @@
             </div>
         </section>
 
-        <section class="section portfolio for-mobile">
-            <div class="portfolio-inner">
-                <!-- <h2 class="portfolio__title">our clients</h2>
-                <div class="portfolio__list">
-                    <ol>
-                        <li>American classic</li>
-                        <li>Empire<v/li>
-                        <li>Classical</li>
-                        <li>Loft</li>
-                        <li>Minimalism</li>
-                        <li>Provence</li>
-                        <li>Romanticism</li>
-                        <li>Scandinavian style</li>
-                        <li>Mediterranian style</li>
-                        <li>High tech</li>
-                        <li>Eclecticism</li>
-                    </ol>
-                </div> -->
-                <h3>We realize your<br>wildest fantasies</h3>
-                <div class="for-mobile">
-                    <div class="portfolio__photo for-mobile"><img src="images/portfolio-xs.jpg" alt="portfolio-xs"></div>
-                    <div class="projects-control__formobile">
-                        <div class="portfolio__formobile-btn-prev"></div>
-                        <div class="portfolio__formobile-btn-next"></div>
-                    </div>
+        <section class="portfolio">
+            <div class="portfolio__bg"></div>
+            <div class="container">
+                <div class="portfolio__inner">
+                    <div class="portfolio__content">
+                        <h2 class="portfolio__title">We realize your wildest fantasies</h2>
+                        <div class="portfolio__mobSlider mobSlider-projects">
+                            <div class="mobSlider-projects__slide">
+                                <img src="images/portfolio-xs.jpg" alt="portfolio-xs">
+                            </div>
+                            <div class="mobSlider-projects__control">
+                                <div class="mobSlider-projects__button mobSlider-projects__button_prev"></div>
+                                <div class="mobSlider-projects__button mobSlider-projects__button_next"></div>
+                            </div>
+                        </div>
+                        <ul class="portfolio__list">
+                            <li class="active">American classic</li>
+                            <li>Empire<v/li>
+                            <li>Classical</li>
+                            <li>Loft</li>
+                            <li>Minimalism</li>
+                            <li>Provence</li>
+                            <li>Romanticism</li>
+                            <li>Scandinavian style</li>
+                            <li>Mediterranian style</li>
+                            <li>High tech</li>
+                            <li>Eclecticism</li>
+                        </ul> 
+                    </div> 
+                    <div class="portfolio__images">
+                        <div class="portfolio__image portfolio__image_big"><img src="./images/portfolio-1.jpg" alt="portfolio-1.jpg"></div>
+                        <div class="portfolio__image"><img src="./images/portfolio-2.jpg" alt="portfolio-2.jpg"></div>
+                        <div class="portfolio__image fantasy__image_big"><img src="./images/portfolio-3.jpg" alt="portfolio-3.jpg"></div>
+                        <div class="portfolio__image"><img src="./images/portfolio-4.jpg" alt="portfolio-4.jpg"></div>
+                    </div>                  
                 </div>
-            </div>
+            </div>    
         </section>
 
-        <section class="section clients">
+        <section class="clients">
             <div class="clients-inner">
                 <h3 class="clients__title">our clients</h3>
                 <div class="clients__icon">
@@ -306,37 +320,40 @@
             </div>             
         </section>
 
-        <section class="section questionform">
-            <div class="questionform_inner">
-                <div class="questions_form">
-                    <h3>have any questions?</h3>
-                    <div class="questionform_box1">
-                        <div class="questionform_name">
-                            <label for="questionform_name">Name</label>
+        <section class="qform">
+            <div class="container">
+                <div class="qform_inner">
+                    <div class="questions_form">
+                        <h3 class="qform_box-title">have any questions?</h3>
+                        <div class="qform_box qform_name">
+                            <label for="qform_name">Name</label>
                             <input placeholder="What is your name:" id="name" type="text">
                         </div>
-                        <div class="questionform_phone">
-                            <label for="questionform_phone">Phone</label>
+                        <div class="qform_box qform_phone">
+                            <label for="qform_phone">Phone</label>
                             <input placeholder="Your phone number:" id="phone" type="phone">
                         </div>
-                    </div>  
-                    <div class="questionform_box2">
-                        <label for="questionform_question">Question</label>
-                        <input placeholder="I want to know:" id="question" type="text">
+                        <div class="qform_box qform_text">
+                            <label for="qform_question">Question</label>
+                            <input placeholder="I want to know:" id="question" type="text">
+                        </div>
+                        <label class="qform_box checkbox">
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">I agree to the processing of personal data</label>
+                        </label>
+                        <button class="qform_box button qform_btn">Submit</button>
                     </div>
-                    <label class="questionform checkbox">
-                            <input type="checkbox" id="checkbox3">
-                            <label for="checkbox3">I agree to the processing of personal data</label>
-                    </label>
-                    <button class="button questionform_btn">Submit</button>
+                    <div class="qform_map-mobile"></div>
+                    <div class="qform_inner-information">
+                        <h3 class="adress">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum <br>Tel +7 (928) 768 32 29</h3>
+                        <div class="qform_contacts_wrapper">
+                            <div class="qform_contacts"><img src="./images/icon/screen_7_email.svg"></div>
+                            <div class="qform_contacts"><img src="./images/icon/screen_7_social.svg"></div>
+                        </div>
+                    </div>    
+                    <div class="qform_map-desk"></div>
                 </div>
-                <h3 class="adress">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum <br>Tel +7 (928) 768 32 29</h3>
-                <div class="questionform_contacts_wrapper">
-                    <div class="questionform_contacts"><img src="./images/icon/screen_7_email.svg"></div>
-                    <div class="questionform_contacts"><img src="./images/icon/screen_7_social.svg"></div>
-                </div>
-                <div class="questionform_map"></div>
-            </div>               
+            </div>
         </section>
 
     </main>
