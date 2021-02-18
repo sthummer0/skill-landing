@@ -1013,11 +1013,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-    }
-
-    .types {
-        margin-bottom: 140px;
-    }
+    }  
 }
 
 /* Measurement */
